@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Smakosz – wyroby garmażeryjne, wędliny, sery i kawa | Warszawa</title>
 <meta name="description" content="Smakosz, Herbu Oksza 10, Warszawa: obiady domowe, garmażerka, własna wędzarnia, sery korynckie, miody, kawa Belly Coffee i ciasta. Zapraszamy od poniedziałku do soboty.">
+<link rel="icon" href="img/hero.jpg">
 <link rel="icon" href="https://i.ibb.co/Cp8pcKsG/733040700-27812056851732776-7805636237045474313-n.jpg">
 <meta property="og:title" content="Smakosz – wyroby garmażeryjne">
 <meta property="og:description" content="Obiady domowe, garmażerka, wędliny z własnej wędzarni, sery, miody i kawa.">
@@ -51,7 +52,7 @@ header{position:sticky;top:0;z-index:20;background:var(--green);color:#fff}
 
 /* hero */
 .hero{position:relative;background:var(--green);color:#fff;overflow:hidden;min-height:min(86vh,720px);display:flex;align-items:center}
-.hero-img{position:absolute;inset:0 0 0 auto;width:75%;background:url('https://i.ibb.co/Cp8pcKsG/733040700-27812056851732776-7805636237045474313-n.jpg') center/cover no-repeat}
+.hero-img{position:absolute;inset:0 0 0 auto;width:75%;background:url('img/hero.jpg') center/cover no-repeat,url('https://i.ibb.co/Cp8pcKsG/733040700-27812056851732776-7805636237045474313-n.jpg') center/cover no-repeat}
 .hero-img::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--green) 0,rgba(29,58,44,.75) 28%,rgba(29,58,44,.1) 70%)}
 .hero .wrap{position:relative;padding:4rem 0}
 .hero h1{font-size:clamp(3rem,8vw,6rem);margin-bottom:1rem}
@@ -128,6 +129,8 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.6rem
 .fb p{color:var(--muted)}
 .fb .btn{background:var(--green);color:#fff}
 .fb .btn:hover{background:var(--green-2)}
+.ic{width:1.05em;height:1.05em;vertical-align:-.15em;margin-right:.5em;flex:none}
+.ci a{display:inline-flex;align-items:center}
 </style>
 </head>
 <body>
@@ -140,7 +143,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.6rem
       <li><a href="#kawa">Kawa</a></li>
       <li><a href="#kontakt">Kontakt</a></li>
     </ul>
-    <a class="tel" href="tel:+48789800076">789 800 076</a>
+    <a class="tel" href="tel:+48789800076"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.300.2 2.500.6 3.600.1.300 0 .700-.2 1l-2.300 2.200z"/></svg>789 800 076</a>
   </div>
 </header>
 
@@ -167,7 +170,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.6rem
 
     <div class="offer">
       <article class="item reveal">
-        <div class="pic"><img loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.removeAttribute('src');this.classList.add('broken')" src="https://i.ibb.co/KzR5Y8WJ/886312893-122130831699372880-6306910903222518443-n.jpg" alt="Tiramisu domowej roboty"></div>
+        <div class="pic"><img loading="lazy" src="img/tiramisu.jpg" data-fb="https://i.ibb.co/KzR5Y8WJ/886312893-122130831699372880-6306910903222518443-n.jpg" onerror="if(this.dataset.fb){this.src=this.dataset.fb;this.dataset.fb=''}else{this.onerror=null;this.removeAttribute('src');this.classList.add('broken')}" alt="Tiramisu domowej roboty"></div>
         <div class="rv">
           <h3>Ciasta i desery</h3>
           <p>Nasze tiramisu jest obłędne. Koniecznie spróbujcie.</p>
@@ -176,7 +179,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.6rem
       </article>
 
       <article class="item reveal">
-        <div class="pic"><img loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.removeAttribute('src');this.classList.add('broken')" src="https://i.ibb.co/S4G4ggmz/857369284-122128965777372880-3554414891914203763-n.jpg" alt="Paszteciki z ciasta francuskiego"></div>
+        <div class="pic"><img loading="lazy" src="img/paszteciki.jpg" data-fb="https://i.ibb.co/S4G4ggmz/857369284-122128965777372880-3554414891914203763-n.jpg" onerror="if(this.dataset.fb){this.src=this.dataset.fb;this.dataset.fb=''}else{this.onerror=null;this.removeAttribute('src');this.classList.add('broken')}" alt="Paszteciki z ciasta francuskiego"></div>
         <div class="rv">
           <h3>Paszteciki z ciasta francuskiego</h3>
           <p>Chrupiące, jeszcze ciepłe, w czterech smakach.</p>
@@ -185,7 +188,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.6rem
       </article>
 
       <article class="item reveal">
-        <div class="pic"><img loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.removeAttribute('src');this.classList.add('broken')" src="https://i.ibb.co/Fbdzk84p/838645763-122125954209372880-5431152543076003371-n.jpg" alt="Domowe kopytka"></div>
+        <div class="pic"><img loading="lazy" src="img/kopytka.jpg" data-fb="https://i.ibb.co/Fbdzk84p/838645763-122125954209372880-5431152543076003371-n.jpg" onerror="if(this.dataset.fb){this.src=this.dataset.fb;this.dataset.fb=''}else{this.onerror=null;this.removeAttribute('src');this.classList.add('broken')}" alt="Domowe kopytka"></div>
         <div class="rv">
           <h3>Domowe kopytka</h3>
           <p>Którą wersję wybieracie?</p>
@@ -194,7 +197,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.6rem
       </article>
 
       <article class="item reveal">
-        <div class="pic"><img loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.removeAttribute('src');this.classList.add('broken')" src="https://i.ibb.co/fdHXLbp4/800540387-122121125163372880-3371432746684585944-n.jpg" alt="Naturalne miody i zestawy prezentowe" onerror="this.closest('.item').style.gridTemplateColumns='1fr';this.parentNode.remove()"></div>
+        <div class="pic"><img loading="lazy" src="img/miod.jpg" data-fb="https://i.ibb.co/fdHXLbp4/800540387-122121125163372880-3371432746684585944-n.jpg" onerror="if(this.dataset.fb){this.src=this.dataset.fb;this.dataset.fb=''}else{this.onerror=null;this.removeAttribute('src');this.classList.add('broken')}" alt="Naturalne miody i zestawy prezentowe" onerror="this.closest('.item').style.gridTemplateColumns='1fr';this.parentNode.remove()"></div>
         <div class="rv">
           <h3>Naturalne miody</h3>
           <p>Mamy naturalne miody oraz zestawy prezentowe. To dobry pomysł na upominek.</p>
@@ -202,7 +205,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.6rem
       </article>
 
       <article class="item reveal">
-        <div class="pic"><img loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.removeAttribute('src');this.classList.add('broken')" src="https://i.ibb.co/WW9zszvY/864139927-122129569347372880-6066750825152046404-n.jpg" alt="Kraftowa mąka z Młyna Mazurki"></div>
+        <div class="pic"><img loading="lazy" src="img/maka.jpg" data-fb="https://i.ibb.co/WW9zszvY/864139927-122129569347372880-6066750825152046404-n.jpg" onerror="if(this.dataset.fb){this.src=this.dataset.fb;this.dataset.fb=''}else{this.onerror=null;this.removeAttribute('src');this.classList.add('broken')}" alt="Kraftowa mąka z Młyna Mazurki"></div>
         <div class="rv">
           <h3>Kraftowa mąka z Młyna Mazurki</h3>
           <p>Od teraz kupicie u nas także rzemieślniczą mąkę z Młyna Mazurki.</p>
@@ -229,14 +232,14 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.6rem
         <h3>I wiele więcej!</h3>
         <p>Nowości, promocje i codzienne menu znajdziecie na naszym profilu na Facebooku.</p>
       </div>
-      <a class="btn" href="https://www.facebook.com/search/top?q=Smakosz%20wyroby%20garma%C5%BCeryjne" target="_blank" rel="noopener">Odwiedź nas na Facebooku</a>
+      <a class="btn" href="https://www.facebook.com/profile.php?id=61591186425307" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M24 12a12 12 0 1 0-13.9 11.9v-8.400H7.100V12h3V9.400c0-3 1.800-4.700 4.500-4.700 1.300 0 2.700.2 2.700.2v3h-1.500c-1.500 0-2 .9-2 1.900V12h3.400l-.5 3.500h-2.900v8.400A12 12 0 0 0 24 12z"/></svg>Odwiedź nas na Facebooku</a>
     </aside>
   </div>
 </section>
 
 <section id="kawa" class="coffee">
   <div class="wrap grid">
-    <img class="reveal" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.removeAttribute('src');this.classList.add('broken')" src="https://i.ibb.co/mFNj4L95/886874463-122131126557372880-4726280942730522653-n.jpg" alt="Kawa Belly Coffee">
+    <img class="reveal" loading="lazy" src="img/kawa.jpg" data-fb="https://i.ibb.co/mFNj4L95/886874463-122131126557372880-4726280942730522653-n.jpg" onerror="if(this.dataset.fb){this.src=this.dataset.fb;this.dataset.fb=''}else{this.onerror=null;this.removeAttribute('src');this.classList.add('broken')}" alt="Kawa Belly Coffee">
     <div class="reveal" style="--d:.15s">
       <h2>Belly Coffee, kawa łagodna dla żołądka</h2>
       <p>Stworzona dla osób, które mają wrażliwy żołądek, a nie chcą rezygnować z porannej kawy. Kupicie ją u nas na miejscu.</p>
@@ -259,9 +262,9 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.6rem
       <div class="reveal">
         <address class="ci" style="font-style:normal">
           <span>Herbu Oksza 10 lok. u5<br>Warszawa</span>
-          <a href="tel:+48789800076">789 800 076</a>
+          <a href="tel:+48789800076"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.300.2 2.500.6 3.600.1.300 0 .700-.2 1l-2.300 2.200z"/></svg>789 800 076</a>
           <a href="mailto:gaba.cateringi@gmail.com">gaba.cateringi@gmail.com</a>
-          <a href="https://www.facebook.com/search/top?q=Smakosz%20wyroby%20garma%C5%BCeryjne" target="_blank" rel="noopener">Smakosz na Facebooku</a>
+          <a href="https://www.facebook.com/profile.php?id=61591186425307" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M24 12a12 12 0 1 0-13.9 11.9v-8.400H7.100V12h3V9.400c0-3 1.800-4.700 4.500-4.700 1.300 0 2.700.2 2.700.2v3h-1.500c-1.500 0-2 .9-2 1.900V12h3.400l-.5 3.500h-2.900v8.400A12 12 0 0 0 24 12z"/></svg>Smakosz na Facebooku</a>
         </address>
         <table class="hours" aria-label="Godziny otwarcia">
           <tbody>
@@ -274,7 +277,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.6rem
             <tr data-d="0"><td>Niedziela</td><td>zamknięte</td></tr>
           </tbody>
         </table>
-        <a class="btn" href="tel:+48789800076">Zadzwoń</a>
+        <a class="btn" href="tel:+48789800076"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.300.2 2.500.6 3.600.1.300 0 .700-.2 1l-2.300 2.200z"/></svg>Zadzwoń</a>
       </div>
       <div class="map reveal" style="--d:.15s">
         <iframe title="Mapa dojazdu do Smakosz" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d658.6412042103141!2d20.885847911393128!3d52.20155864556017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471935006d7829fb%3A0x3ef95a2f719e46b2!2sSmakosz%20-%20wyroby%20garma%C5%BCeryjne!5e1!3m2!1spl!2spl!4v1793873442695!5m2!1spl!2spl" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
