@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Smakosz – wyroby garmażeryjne, wędliny, sery i kawa | Warszawa</title>
+<meta name="description" content="Smakosz, Herbu Oksza 10, Warszawa: obiady domowe, garmażerka, własna wędzarnia, sery korynckie, miody, kawa Belly Coffee i ciasta. Zapraszamy od poniedziałku do soboty.">
+<link rel="icon" href="https://i.ibb.co/Cp8pcKsG/733040700-27812056851732776-7805636237045474313-n.jpg">
+<meta property="og:title" content="Smakosz – wyroby garmażeryjne">
+<meta property="og:description" content="Obiady domowe, garmażerka, wędliny z własnej wędzarni, sery, miody i kawa.">
+<meta property="og:image" content="https://i.ibb.co/Cp8pcKsG/733040700-27812056851732776-7805636237045474313-n.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#1d3a2c; --green-2:#2b5440; --honey:#d9a23f; --honey-2:#f3dfb0;
+  --paper:#fbfaf5; --ink:#1c241f; --muted:#5b665f; --line:#e3e1d6;
+  --serif:'Fraunces',Georgia,'Times New Roman',serif;
+  --sans:'Figtree',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root{--paper:#121a15;--ink:#eee9dc;--muted:#a7b0a8;--line:#2a3a31;--honey-2:#3a3018}
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.65;font-size:17px}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--honey);outline-offset:3px}
+.wrap{width:min(1120px,92%);margin-inline:auto}
+h1,h2,h3{font-family:var(--serif);line-height:1.15;font-weight:700}
+h2{font-size:clamp(1.9rem,4vw,2.7rem);margin-bottom:1rem}
+h3{font-size:1.3rem;margin-bottom:.4rem}
+p{max-width:62ch}
+.btn{display:inline-block;padding:.85rem 1.5rem;border-radius:999px;background:var(--honey);color:#1d1a10;font-weight:600;text-decoration:none;transition:transform .15s,background .15s}
+.btn:hover{background:#e8b552;transform:translateY(-2px)}
+.btn.ghost{background:transparent;border:2px solid currentColor;color:#fff}
+.btn.ghost:hover{background:rgba(255,255,255,.12)}
+
+/* nav */
+header{position:sticky;top:0;z-index:20;background:var(--green);color:#fff}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:var(--serif);font-size:1.6rem;font-weight:700;text-decoration:none;letter-spacing:.01em}
+.nav ul{display:flex;gap:1.6rem;list-style:none;padding:0}
+.nav ul a{text-decoration:none;font-weight:500;opacity:.9}
+.nav ul a:hover{opacity:1;color:var(--honey-2)}
+.nav .tel{font-weight:600;text-decoration:none;color:var(--honey)}
+@media(max-width:820px){.nav ul{display:none}}
+
+/* hero */
+.hero{position:relative;background:var(--green);color:#fff;overflow:hidden;min-height:min(86vh,720px);display:flex;align-items:center}
+.hero-img{position:absolute;inset:0 0 0 auto;width:75%;background:url('https://i.ibb.co/Cp8pcKsG/733040700-27812056851732776-7805636237045474313-n.jpg') center/cover no-repeat}
+.hero-img::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--green) 0,rgba(29,58,44,.75) 28%,rgba(29,58,44,.1) 70%)}
+.hero .wrap{position:relative;padding:4rem 0}
+.hero h1{font-size:clamp(3rem,8vw,6rem);margin-bottom:1rem}
+.hero p.lead{font-size:1.25rem;max-width:30ch;margin-bottom:1.6rem;color:#f1ecd9}
+.hero .acts{display:flex;gap:.8rem;flex-wrap:wrap}
+.badge{display:inline-block;margin-top:1.8rem;padding:.4rem .9rem;border-radius:999px;background:rgba(255,255,255,.14);font-size:.95rem}
+.badge i{display:inline-block;width:.6rem;height:.6rem;border-radius:50%;margin-right:.5rem;background:#999}
+.badge.open i{background:#6fd08c}
+@media(max-width:760px){
+  .hero-img{width:100%}
+  .hero-img::after{background:linear-gradient(180deg,rgba(29,58,44,.55),rgba(29,58,44,.88))}
+}
+
+section{padding:5rem 0}
+.intro{background:var(--honey-2);padding:3rem 0}
+.intro p{font-family:var(--serif);font-size:clamp(1.3rem,2.6vw,1.8rem);max-width:40ch;line-height:1.35;color:var(--ink)}
+
+/* offer */
+.offer{display:grid;gap:2.5rem;margin-top:2.5rem}
+.item{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:center}
+.item:nth-child(even) .pic{order:2}
+.pic img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:6px}
+.item ul{list-style:none;padding:0;margin-top:.8rem;display:flex;flex-wrap:wrap;gap:.5rem}
+.item li{padding:.25rem .8rem;border:1px solid var(--line);border-radius:999px;font-size:.95rem}
+.item p+p{margin-top:.6rem}
+@media(max-width:760px){.item{grid-template-columns:1fr;gap:1rem}.item:nth-child(even) .pic{order:0}}
+
+/* coffee */
+.coffee{background:var(--green);color:#fff}
+.coffee .grid{display:grid;grid-template-columns:5fr 6fr;gap:3rem;align-items:center}
+.coffee img{border-radius:6px;width:100%;aspect-ratio:1;object-fit:cover}
+.coffee dl{margin-top:1.2rem;display:grid;gap:.9rem}
+.coffee dt{font-weight:600;color:var(--honey)}
+.coffee dd{margin:0;color:#e8e6da;font-size:.98rem}
+@media(max-width:820px){.coffee .grid{grid-template-columns:1fr}}
+
+/* more */
+.more{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:2rem;margin-top:2rem}
+.more div{border-top:3px solid var(--honey);padding-top:1rem}
+.more p{font-size:.98rem;color:var(--muted)}
+
+/* contact */
+.contact .grid{display:grid;grid-template-columns:5fr 6fr;gap:3rem;margin-top:2rem}
+.hours{width:100%;border-collapse:collapse;margin:1rem 0 1.5rem}
+.hours td{padding:.45rem 0;border-bottom:1px solid var(--line)}
+.hours td:last-child{text-align:right;font-variant-numeric:tabular-nums}
+.hours tr.today{font-weight:700;color:var(--green-2)}
+@media(prefers-color-scheme:dark){.hours tr.today{color:var(--honey)}}
+.ci{display:grid;gap:.4rem;font-size:1.05rem}
+.ci a{font-weight:600}
+.map{border-radius:6px;overflow:hidden;min-height:380px;border:1px solid var(--line)}
+.map iframe{width:100%;height:100%;min-height:380px;border:0;display:block}
+@media(max-width:820px){.contact .grid{grid-template-columns:1fr}}
+
+footer{background:var(--green);color:#d9d6c6;padding:2rem 0;font-size:.95rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.6rem}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top">Smakosz</a>
+    <ul>
+      <li><a href="#oferta">Oferta</a></li>
+      <li><a href="#kawa">Kawa</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+    <a class="tel" href="tel:+48789800076">789 800 076</a>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="hero-img" role="img" aria-label="Wyroby marki Smakosz"></div>
+  <div class="wrap">
+    <h1>Smakosz</h1>
+    <p class="lead">Obiady domowe, garmażerka i wyroby z własnej wędzarni.</p>
+    <div class="acts">
+      <a class="btn" href="#oferta">Zobacz ofertę</a>
+      <a class="btn ghost" href="#kontakt">Jak do nas trafić</a>
+    </div>
+    <span class="badge" id="status"><i></i><span>Sprawdzamy godziny…</span></span>
+  </div>
+</div>
+
+<div class="intro"><div class="wrap"><p>Gotujemy, pieczemy i wędzimy na miejscu. Wpadnijcie po obiad, ser na wzgórzu, kawę albo coś słodkiego.</p></div></div>
+
+<section id="oferta">
+  <div class="wrap">
+    <h2>Co dziś na stole</h2>
+    <p>Codziennie świeże wyroby garmażeryjne, ciasta i wędliny. Asortyment bywa różny, więc zadzwońcie, jeśli szukacie czegoś konkretnego.</p>
+
+    <div class="offer">
+      <article class="item">
+        <div class="pic"><img loading="lazy" src="https://i.ibb.co/KzR5Y8WJ/886312893-122130831699372880-6306910903222518443-n.jpg" alt="Tiramisu domowej roboty"></div>
+        <div>
+          <h3>Ciasta i desery</h3>
+          <p>Nasze tiramisu jest obłędne. Koniecznie spróbujcie.</p>
+          <ul><li>Tiramisu</li><li>Brownie czekoladowe</li><li>Rurki mascarpone z malinami</li><li>Rurki ze słonym karmelem</li><li>Sernik z bezą</li><li>Ciasteczka owsiane fit</li></ul>
+        </div>
+      </article>
+
+      <article class="item">
+        <div class="pic"><img loading="lazy" src="https://i.ibb.co/S4G4ggmz/857369284-122128965777372880-3554414891914203763-n.jpg" alt="Paszteciki z ciasta francuskiego"></div>
+        <div>
+          <h3>Paszteciki z ciasta francuskiego</h3>
+          <p>Chrupiące, jeszcze ciepłe, w czterech smakach.</p>
+          <ul><li>Z kapustą</li><li>Z mięsem</li><li>Z szynką i serem</li><li>Ze szpinakiem i fetą</li></ul>
+        </div>
+      </article>
+
+      <article class="item">
+        <div class="pic"><img loading="lazy" src="https://i.ibb.co/Fbdzk84p/838645763-122125954209372880-5431152543076003371-n.jpg" alt="Domowe kopytka"></div>
+        <div>
+          <h3>Domowe kopytka</h3>
+          <p>Którą wersję wybieracie?</p>
+          <ul><li>Szpinakowe, wyraziste w smaku</li><li>Dyniowe, delikatne i słodkie</li><li>Zwykłe, tradycyjne</li></ul>
+        </div>
+      </article>
+
+      <article class="item">
+        <div class="pic"><img loading="lazy" src="https://i.ibb.co/fdHXLbp4/800540387-122121125163372880-3371432746684585944-n.jpg" alt="Naturalne miody i zestawy prezentowe"></div>
+        <div>
+          <h3>Naturalne miody</h3>
+          <p>Mamy naturalne miody oraz zestawy prezentowe. To dobry pomysł na upominek.</p>
+        </div>
+      </article>
+
+      <article class="item">
+        <div class="pic"><img loading="lazy" src="https://i.ibb.co/WW9zszvY/864139927-122129569347372880-6066750825152046404-n.jpg" alt="Kraftowa mąka z Młyna Mazurki"></div>
+        <div>
+          <h3>Kraftowa mąka z Młyna Mazurki</h3>
+          <p>Od teraz kupicie u nas także rzemieślniczą mąkę z Młyna Mazurki.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="more">
+      <div>
+        <h3>Sery z serowarni na wzgórzu</h3>
+        <p>Prawdziwy smak tradycji. Sery korynckie: z czosnkiem niedźwiedzim, z orzechem włoskim, z pomidorami, z kozieradką, z czarnuszką, wędzony, naturalny i z papryką.</p>
+      </div>
+      <div>
+        <h3>Z własnej wędzarni</h3>
+        <p>Kiełbaski łakomczuszki, kindziuk z pieprzem, boczek z czosnkiem, szynka wiejska pieczona na masełku, kabanosy wykwintne i inne wędliny w stałej sprzedaży.</p>
+      </div>
+      <div>
+        <h3>Obiady domowe i garmażerka</h3>
+        <p>Domowe obiady i dania gotowe do zabrania. Robimy też catering. Napiszcie lub zadzwońcie.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="kawa" class="coffee">
+  <div class="wrap grid">
+    <img loading="lazy" src="https://i.ibb.co/mFNj4L95/886874463-122131126557372880-4726280942730522653-n.jpg" alt="Kawa Belly Coffee">
+    <div>
+      <h2>Belly Coffee, kawa łagodna dla żołądka</h2>
+      <p>Stworzona dla osób, które mają wrażliwy żołądek, a nie chcą rezygnować z porannej kawy. Kupicie ją u nas na miejscu.</p>
+      <dl>
+        <div><dt>Bez drażnienia żołądka</dt><dd>Kawa niskodrażniąca, dla osób, którym tradycyjna kawa szkodzi.</dd></div>
+        <div><dt>Typowa ilość kofeiny</dt><dd>Tyle samo kofeiny co w każdej innej arabice.</dd></div>
+        <div><dt>Pełny smak i aromat</dt><dd>Z ziaren usunięto kwasowość, nie smak. Nuty orzechów, czekolady, karmelu i śliwki.</dd></div>
+        <div><dt>Naturalny proces</dt><dd>Ziarna od kolumbijskich rolników, obrabiane na mokro i parą wodną, bez dodatkowej chemii.</dd></div>
+        <div><dt>Do każdej metody parzenia</dt><dd>Ekspres automatyczny, kawiarka, french press, kubek, a nawet tygielek.</dd></div>
+        <div><dt>Świeżo palona</dt><dd>Palona codziennie, a na każdej paczce jest data palenia.</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section id="kontakt" class="contact">
+  <div class="wrap">
+    <h2>Odwiedź nas</h2>
+    <div class="grid">
+      <div>
+        <address class="ci" style="font-style:normal">
+          <span>Herbu Oksza 10 lok. u5<br>Warszawa</span>
+          <a href="tel:+48789800076">789 800 076</a>
+          <a href="mailto:gaba.cateringi@gmail.com">gaba.cateringi@gmail.com</a>
+        </address>
+        <table class="hours" aria-label="Godziny otwarcia">
+          <tbody>
+            <tr data-d="1"><td>Poniedziałek</td><td>08:00 – 19:00</td></tr>
+            <tr data-d="2"><td>Wtorek</td><td>08:00 – 19:00</td></tr>
+            <tr data-d="3"><td>Środa</td><td>08:00 – 19:00</td></tr>
+            <tr data-d="4"><td>Czwartek</td><td>08:00 – 19:00</td></tr>
+            <tr data-d="5"><td>Piątek</td><td>08:00 – 19:00</td></tr>
+            <tr data-d="6"><td>Sobota</td><td>08:00 – 16:00</td></tr>
+            <tr data-d="0"><td>Niedziela</td><td>zamknięte</td></tr>
+          </tbody>
+        </table>
+        <a class="btn" href="tel:+48789800076">Zadzwoń</a>
+      </div>
+      <div class="map">
+        <iframe title="Mapa dojazdu do Smakosz" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d658.6412042103141!2d20.885847911393128!3d52.20155864556017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471935006d7829fb%3A0x3ef95a2f719e46b2!2sSmakosz%20-%20wyroby%20garma%C5%BCeryjne!5e1!3m2!1spl!2spl!4v1793873442695!5m2!1spl!2spl" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="y"></span> Smakosz – wyroby garmażeryjne</span>
+    <span>Herbu Oksza 10 lok. u5, Warszawa</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  document.getElementById('y').textContent=new Date().getFullYear();
+  var h={1:[8,19],2:[8,19],3:[8,19],4:[8,19],5:[8,19],6:[8,16]};
+  var n=new Date(),d=n.getDay(),t=n.getHours()+n.getMinutes()/60;
+  var row=document.querySelector('tr[data-d="'+d+'"]');if(row)row.classList.add('today');
+  var b=document.getElementById('status'),s=b.querySelector('span');
+  var r=h[d];
+  if(r&&t>=r[0]&&t<r[1]){b.classList.add('open');s.textContent='Teraz otwarte, do '+r[1]+':00';}
+  else{s.textContent='Teraz zamknięte';}
+})();
+</script>
+</body>
+</html>
