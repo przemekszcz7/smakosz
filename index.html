@@ -12,6 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<script>document.documentElement.className='js'</script>
 <style>
 :root{
   --green:#1d3a2c; --green-2:#2b5440; --honey:#d9a23f; --honey-2:#f3dfb0;
@@ -72,6 +73,7 @@ section{padding:5rem 0}
 .offer{display:grid;gap:2.5rem;margin-top:2.5rem}
 .item{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:center}
 .item:nth-child(even) .pic{order:2}
+.broken{background:var(--honey-2)}
 .pic img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:6px}
 .item ul{list-style:none;padding:0;margin-top:.8rem;display:flex;flex-wrap:wrap;gap:.5rem}
 .item li{padding:.25rem .8rem;border:1px solid var(--line);border-radius:999px;font-size:.95rem}
@@ -105,12 +107,31 @@ section{padding:5rem 0}
 .map iframe{width:100%;height:100%;min-height:380px;border:0;display:block}
 @media(max-width:820px){.contact .grid{grid-template-columns:1fr}}
 
+
+/* scroll animations */
+.broken{background:var(--honey-2)}
+.js .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+.js .reveal.in{opacity:1;transform:none}
+.js .item.reveal:nth-child(odd) .pic{transform:translateX(-24px);transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.js .item.reveal:nth-child(even) .pic{transform:translateX(24px);transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.js .item.reveal.in .pic{transform:none}
+.js .hero-img{transform:scale(1.08);transition:transform 1.6s ease}
+.js .hero-img.in{transform:none}
+@media(prefers-reduced-motion:reduce){.js .reveal,.js .item.reveal .pic,.js .hero-img{opacity:1!important;transform:none!important;transition:none!important}}
+
 footer{background:var(--green);color:#d9d6c6;padding:2rem 0;font-size:.95rem}
 footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.6rem}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+.fb{background:var(--honey-2);border-radius:8px;padding:2rem;margin-top:3rem;display:flex;gap:1.5rem;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.fb h3{font-size:1.6rem;margin-bottom:.3rem}
+.fb p{color:var(--muted)}
+.fb .btn{background:var(--green);color:#fff}
+.fb .btn:hover{background:var(--green-2)}
 </style>
 </head>
 <body>
+<script>document.documentElement.classList.add("js")</script>
 <header>
   <div class="wrap nav">
     <a class="logo" href="#top">Smakosz</a>
@@ -141,48 +162,48 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.6rem
 
 <section id="oferta">
   <div class="wrap">
-    <h2>Co dziś na stole</h2>
+    <h2 class="reveal">Co dziś na stole</h2>
     <p>Codziennie świeże wyroby garmażeryjne, ciasta i wędliny. Asortyment bywa różny, więc zadzwońcie, jeśli szukacie czegoś konkretnego.</p>
 
     <div class="offer">
-      <article class="item">
-        <div class="pic"><img loading="lazy" src="https://i.ibb.co/KzR5Y8WJ/886312893-122130831699372880-6306910903222518443-n.jpg" alt="Tiramisu domowej roboty"></div>
-        <div>
+      <article class="item reveal">
+        <div class="pic"><img loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.removeAttribute('src');this.classList.add('broken')" src="https://i.ibb.co/KzR5Y8WJ/886312893-122130831699372880-6306910903222518443-n.jpg" alt="Tiramisu domowej roboty"></div>
+        <div class="rv">
           <h3>Ciasta i desery</h3>
           <p>Nasze tiramisu jest obłędne. Koniecznie spróbujcie.</p>
           <ul><li>Tiramisu</li><li>Brownie czekoladowe</li><li>Rurki mascarpone z malinami</li><li>Rurki ze słonym karmelem</li><li>Sernik z bezą</li><li>Ciasteczka owsiane fit</li></ul>
         </div>
       </article>
 
-      <article class="item">
-        <div class="pic"><img loading="lazy" src="https://i.ibb.co/S4G4ggmz/857369284-122128965777372880-3554414891914203763-n.jpg" alt="Paszteciki z ciasta francuskiego"></div>
-        <div>
+      <article class="item reveal">
+        <div class="pic"><img loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.removeAttribute('src');this.classList.add('broken')" src="https://i.ibb.co/S4G4ggmz/857369284-122128965777372880-3554414891914203763-n.jpg" alt="Paszteciki z ciasta francuskiego"></div>
+        <div class="rv">
           <h3>Paszteciki z ciasta francuskiego</h3>
           <p>Chrupiące, jeszcze ciepłe, w czterech smakach.</p>
           <ul><li>Z kapustą</li><li>Z mięsem</li><li>Z szynką i serem</li><li>Ze szpinakiem i fetą</li></ul>
         </div>
       </article>
 
-      <article class="item">
-        <div class="pic"><img loading="lazy" src="https://i.ibb.co/Fbdzk84p/838645763-122125954209372880-5431152543076003371-n.jpg" alt="Domowe kopytka"></div>
-        <div>
+      <article class="item reveal">
+        <div class="pic"><img loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.removeAttribute('src');this.classList.add('broken')" src="https://i.ibb.co/Fbdzk84p/838645763-122125954209372880-5431152543076003371-n.jpg" alt="Domowe kopytka"></div>
+        <div class="rv">
           <h3>Domowe kopytka</h3>
           <p>Którą wersję wybieracie?</p>
           <ul><li>Szpinakowe, wyraziste w smaku</li><li>Dyniowe, delikatne i słodkie</li><li>Zwykłe, tradycyjne</li></ul>
         </div>
       </article>
 
-      <article class="item">
-        <div class="pic"><img loading="lazy" src="https://i.ibb.co/fdHXLbp4/800540387-122121125163372880-3371432746684585944-n.jpg" alt="Naturalne miody i zestawy prezentowe"></div>
-        <div>
+      <article class="item reveal">
+        <div class="pic"><img loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.removeAttribute('src');this.classList.add('broken')" src="https://i.ibb.co/fdHXLbp4/800540387-122121125163372880-3371432746684585944-n.jpg" alt="Naturalne miody i zestawy prezentowe" onerror="this.closest('.item').style.gridTemplateColumns='1fr';this.parentNode.remove()"></div>
+        <div class="rv">
           <h3>Naturalne miody</h3>
           <p>Mamy naturalne miody oraz zestawy prezentowe. To dobry pomysł na upominek.</p>
         </div>
       </article>
 
-      <article class="item">
-        <div class="pic"><img loading="lazy" src="https://i.ibb.co/WW9zszvY/864139927-122129569347372880-6066750825152046404-n.jpg" alt="Kraftowa mąka z Młyna Mazurki"></div>
-        <div>
+      <article class="item reveal">
+        <div class="pic"><img loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.removeAttribute('src');this.classList.add('broken')" src="https://i.ibb.co/WW9zszvY/864139927-122129569347372880-6066750825152046404-n.jpg" alt="Kraftowa mąka z Młyna Mazurki"></div>
+        <div class="rv">
           <h3>Kraftowa mąka z Młyna Mazurki</h3>
           <p>Od teraz kupicie u nas także rzemieślniczą mąkę z Młyna Mazurki.</p>
         </div>
@@ -190,26 +211,33 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.6rem
     </div>
 
     <div class="more">
-      <div>
+      <div class="reveal">
         <h3>Sery z serowarni na wzgórzu</h3>
         <p>Prawdziwy smak tradycji. Sery korynckie: z czosnkiem niedźwiedzim, z orzechem włoskim, z pomidorami, z kozieradką, z czarnuszką, wędzony, naturalny i z papryką.</p>
       </div>
-      <div>
+      <div class="reveal">
         <h3>Z własnej wędzarni</h3>
         <p>Kiełbaski łakomczuszki, kindziuk z pieprzem, boczek z czosnkiem, szynka wiejska pieczona na masełku, kabanosy wykwintne i inne wędliny w stałej sprzedaży.</p>
       </div>
-      <div>
+      <div class="reveal">
         <h3>Obiady domowe i garmażerka</h3>
         <p>Domowe obiady i dania gotowe do zabrania. Robimy też catering. Napiszcie lub zadzwońcie.</p>
       </div>
     </div>
+    <aside class="fb reveal">
+      <div>
+        <h3>I wiele więcej!</h3>
+        <p>Nowości, promocje i codzienne menu znajdziecie na naszym profilu na Facebooku.</p>
+      </div>
+      <a class="btn" href="https://www.facebook.com/search/top?q=Smakosz%20wyroby%20garma%C5%BCeryjne" target="_blank" rel="noopener">Odwiedź nas na Facebooku</a>
+    </aside>
   </div>
 </section>
 
 <section id="kawa" class="coffee">
   <div class="wrap grid">
-    <img loading="lazy" src="https://i.ibb.co/mFNj4L95/886874463-122131126557372880-4726280942730522653-n.jpg" alt="Kawa Belly Coffee">
-    <div>
+    <img class="reveal" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.removeAttribute('src');this.classList.add('broken')" src="https://i.ibb.co/mFNj4L95/886874463-122131126557372880-4726280942730522653-n.jpg" alt="Kawa Belly Coffee">
+    <div class="reveal" style="--d:.15s">
       <h2>Belly Coffee, kawa łagodna dla żołądka</h2>
       <p>Stworzona dla osób, które mają wrażliwy żołądek, a nie chcą rezygnować z porannej kawy. Kupicie ją u nas na miejscu.</p>
       <dl>
@@ -226,13 +254,14 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.6rem
 
 <section id="kontakt" class="contact">
   <div class="wrap">
-    <h2>Odwiedź nas</h2>
+    <h2 class="reveal">Odwiedź nas</h2>
     <div class="grid">
-      <div>
+      <div class="reveal">
         <address class="ci" style="font-style:normal">
           <span>Herbu Oksza 10 lok. u5<br>Warszawa</span>
           <a href="tel:+48789800076">789 800 076</a>
           <a href="mailto:gaba.cateringi@gmail.com">gaba.cateringi@gmail.com</a>
+          <a href="https://www.facebook.com/search/top?q=Smakosz%20wyroby%20garma%C5%BCeryjne" target="_blank" rel="noopener">Smakosz na Facebooku</a>
         </address>
         <table class="hours" aria-label="Godziny otwarcia">
           <tbody>
@@ -247,7 +276,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.6rem
         </table>
         <a class="btn" href="tel:+48789800076">Zadzwoń</a>
       </div>
-      <div class="map">
+      <div class="map reveal" style="--d:.15s">
         <iframe title="Mapa dojazdu do Smakosz" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d658.6412042103141!2d20.885847911393128!3d52.20155864556017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471935006d7829fb%3A0x3ef95a2f719e46b2!2sSmakosz%20-%20wyroby%20garma%C5%BCeryjne!5e1!3m2!1spl!2spl!4v1793873442695!5m2!1spl!2spl" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
       </div>
     </div>
@@ -265,6 +294,13 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.6rem
 <script>
 (function(){
   document.getElementById('y').textContent=new Date().getFullYear();
+
+  var els=document.querySelectorAll('.reveal');
+  document.querySelectorAll('.more .reveal').forEach(function(e,i){e.style.setProperty('--d',(i*.12)+'s')});
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.15,rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(e){io.observe(e)});
+  }else{els.forEach(function(e){e.classList.add('in')})}
   var h={1:[8,19],2:[8,19],3:[8,19],4:[8,19],5:[8,19],6:[8,16]};
   var n=new Date(),d=n.getDay(),t=n.getHours()+n.getMinutes()/60;
   var row=document.querySelector('tr[data-d="'+d+'"]');if(row)row.classList.add('today');
@@ -272,6 +308,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.6rem
   var r=h[d];
   if(r&&t>=r[0]&&t<r[1]){b.classList.add('open');s.textContent='Teraz otwarte, do '+r[1]+':00';}
   else{s.textContent='Teraz zamknięte';}
+  var hi=document.querySelector('.hero-img');requestAnimationFrame(function(){hi.classList.add('in');});
 })();
 </script>
 </body>
